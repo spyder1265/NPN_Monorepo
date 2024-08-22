@@ -2,11 +2,11 @@
 <a href="http://nextjs.com/" target="blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" width="200" alt="Next Logo" />
 </a>
-<span>X</span>
+X
 <a href="http://prisma.io/" target="blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original-wordmark.svg" width="200" alt="Prisma Logo" />
 </a>
-<span>X</span>
+X
 <a href="http://nestjs.com/" target="blank">   
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original-wordmark.svg" width="200" alt="Nest Logo" />
 </a>
