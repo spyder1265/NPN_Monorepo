@@ -1,0 +1,33 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "cd apps/server && nest start",
+    "start:client": "cd apps/client && next start",
+    "start:server:dev": "cd apps/server && nest start --watch",
+    "start:client:dev": "cd apps/client && next dev",
+    "start:server:prod": "cd apps/server && nest start --prod",
+    "start:client:prod": "cd apps/client && next start",
+    "start:dev": "concurrently \"npm run start:server:dev\" \"npm run start:client:dev\"",
+    "start:prod": "concurrently \"npm run start:server:prod\" \"npm run start:client:prod\"",
+    "build": "concurrently \"npm run build:server\" \"npm run build:client\"",
+    "build:server": "cd apps/server && nest build",
+    "build:client": "cd apps/client && next build",
+    "lint": "cd apps/server && nest lint && cd apps/client && next lint",
+    "clientInstall": "cd apps/client && npm install",
+    "serverInstall": "cd apps/server && npm install",
+    "install:all": "concurrently \"npm install\" \"npm run clientInstall\" \"npm run serverInstall\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "concurrently": "^8.2.2",
+    "prisma": "^5.18.0"
+  }
+}
